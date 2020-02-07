@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveContact"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+        <TextView
+            android:id="@+id/tv_addContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add new contact"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            />
+        <ImageView
+            android:id="@+id/img_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_done_black_24dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/tv_addContact"
+            />
+        <ImageView
+            android:id="@+id/img_person"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/person"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/tv_addContact" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_circlePerson"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src= "@drawable/ic_person_black_24dp"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="2dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            />
+        <EditText
+            android:id="@+id/et_savingTo"
+            android:layout_width="100dp"
+            android:hint = "Saving to "
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_circlePerson"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="50dp"/>
+        <ImageView
+            android:id="@+id/img_personGray"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_person_black_24dp"
+            android:layout_below="@+id/img_circlePerson"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="30dp"
+            />
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="100dp"
+            android:hint = "Name"
+            android:layout_height="wrap_content"
+          android:layout_below="@+id/et_savingTo"
+            android:layout_toRightOf="@+id/img_personGray"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="50dp"/>
+        <ImageView
+            android:id="@+id/img_icon_phone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_call_black_24dp"
+            android:layout_below="@+id/img_personGray"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="100dp"
+            android:hint = "phone"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_name"
+            android:layout_toRightOf="@+id/img_personGray"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="50dp"/>
+
+
+    </RelativeLayout>
+</LinearLayout>
